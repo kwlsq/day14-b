@@ -80,6 +80,9 @@ nav ul li a:hover {
 .trademark {
 }
 .popular-work-card {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
 }
 .work-card {
 }
@@ -161,7 +164,7 @@ header img {
 }
 
 .hero-images {
-    padding-left: 3%;
+  padding-left: 3%;
   width: 50%;
   height: 100%;
   display: flex;
@@ -206,4 +209,44 @@ header img {
 .hero-card-description img {
   width: 12px;
   height: 12px;
+}
+
+/* popular works */
+.popular-work-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5em;
+}
+
+.popular-works {
+  padding: 2em 4em;
+}
+
+.popular-works-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+
+.card-img {
+  width: 83px;
+  height: 83px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+.popular-work-card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-32%, -47%);
+  width: auto;
+  height: 179px;
+}
+
+.popular-work-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
