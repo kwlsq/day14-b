@@ -17,7 +17,28 @@ body {
 }
 
 /* element */
-.navbar {
+
+nav ul {
+  display: flex;
+  gap: 3em;
+}
+
+nav ul li {
+  list-style: none;
+  min-width: 90px;
+  text-align: center;
+}
+
+nav ul li,
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+nav ul li a:hover {
+  font-weight: 400;
 }
 .trademark {
 }
@@ -26,4 +47,45 @@ body {
 .work-card {
 }
 .article-card {
+}
+
+/* header */
+.hero {
+  background-color: #edecff;
+  height: 691px;
+  padding: 2em 4em;
+}
+
+header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+}
+
+header img {
+  width: 156px;
+  height: 34px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-search {
+  background-color: #fbf3eb;
+  height: 40px;
+  width: 151px;
+  font-weight: 700;
+  border: none;
+  color: #333333;
 }
