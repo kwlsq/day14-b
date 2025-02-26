@@ -5,3 +5,9 @@ body {
   font-family: "Lato", serif;
   font-size: 16px;
 }
+
+/* util */
+.f-kaisei-thin {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+}
