@@ -11,3 +11,19 @@ body {
   font-family: "Kaisei Decol", serif;
   font-weight: 400;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+/* element */
+.navbar {
+}
+.trademark {
+}
+.popular-work-card {
+}
+.work-card {
+}
+.article-card {
+}
