@@ -4,9 +4,31 @@ body {
   background-color: #ffffff;
   font-family: "Lato", serif;
   font-size: 16px;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
 /* util */
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
 .f-kaisei-thin {
   font-family: "Kaisei Decol", serif;
   font-weight: 400;
@@ -14,6 +36,21 @@ body {
 
 .underline {
   text-decoration: underline;
+}
+
+.f-lato-normal {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.f-lato-bold {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.btn-submit:hover,
+.btn-search:hover {
+  cursor: pointer;
 }
 
 /* element */
@@ -32,9 +69,9 @@ nav ul li {
 nav ul li,
 nav ul li a {
   text-decoration: none;
-  color: #333333;
   font-size: 1em;
   font-weight: 300;
+  color: #333333;
 }
 
 nav ul li a:hover {
@@ -85,7 +122,88 @@ header img {
   background-color: #fbf3eb;
   height: 40px;
   width: 151px;
-  font-weight: 700;
   border: none;
-  color: #333333;
+}
+
+/* Hero */
+.hero-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2.5em 0;
+}
+
+.hero-description,
+.hero-images {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-right: 7%;
+  margin: 6em 0;
+}
+
+.btn-submit {
+  background-color: #fdd9d3;
+  border: none;
+  border-left: 4px solid #333333;
+  width: 196px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25em;
+  margin-top: 2em;
+}
+
+.hero-images {
+    padding-left: 3%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero-card:nth-child(2) {
+  flex-direction: column-reverse;
+}
+
+.hero-card img {
+  width: 195px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.hero-card-description {
+  display: flex;
+  align-items: center;
+  font-size: 0.5em;
+  justify-content: center;
+  gap: 1em;
+}
+
+.hero-card:nth-child(2) .hero-card-description {
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+.hero-card:nth-child(odd) .hero-card-description {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.hero-card-description img {
+  width: 12px;
+  height: 12px;
 }
